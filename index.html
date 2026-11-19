@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">PARKINSON<span>CARE</span></div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#profil">PROFIL</a></li>
+            <li><a href="#gejala">GEJALA</a></li>
+            <li><a href="#risiko">FAKTOR RISIKO</a></li>
+            <li><a href="#pencegahan">PENCEGAHAN</a></li>
+            <li><a href="#penanganan">PENANGANAN</a></li>
+            <li><a href="#konsultasi">KONSULTASI</a></li>
+            <li><a href="#kontak">KONTAK</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HOME -->
+<header class="hero" id="home">
+
+    <div class="hero-text">
+        <p class="eyebrow">WEBSITE EDUKASI KESEHATAN</p>
+
+        <h1>Kenali Penyakit<br>
+            <span>Parkinson</span>
+        </h1>
+
+        <p class="hero-desc">
+            Kenali gejala, penyebab, faktor risiko, dan penanganan
+            penyakit Parkinson. Tingkatkan pengetahuan untuk menjaga
+            kesehatan sistem saraf dan kualitas hidup.
+        </p>
+
+        <a href="#profil" class="btn">PELAJARI LEBIH LANJUT</a>
+        <a href="#konsultasi" class="btn btn-secondary">KONSULTASI</a>
+    </div>
+
+    <!-- ILUSTRASI OTAK -->
+    <div class="hero-art">
+        <svg viewBox="0 0 460 360">
+
+            <circle cx="230" cy="180" r="150" fill="#17395f"/>
+            <circle cx="230" cy="180" r="120" fill="#294d76"/>
+
+            <path d="M225 75
+            C190 47 151 70 150 101
+            C115 104 104 139 123 160
+            C100 185 116 219 147 232
+            C145 266 181 285 210 267
+            C224 290 253 287 264 267
+            C298 279 324 254 317 226
+            C343 205 332 175 311 154
+            C328 123 307 92 279 88
+            C268 63 244 57 225 75Z"
+            fill="#ff637d"
+            stroke="#ffd5dc"
+            stroke-width="5"/>
+
+            <g fill="none" stroke="#a51e43"
+               stroke-width="8" stroke-linecap="round">
+
+                <path d="M184 90 C166 112 184 128 169 143
+                C153 161 170 177 153 194"/>
+
+                <path d="M222 83 C207 103 225 118 205 140
+                C188 161 212 171 193 195"/>
+
+                <path d="M264 94 C245 112 263 135 247 151
+                C231 168 254 188 236 211"/>
+
+                <path d="M292 120 C278 141 295 159 279 180
+                C266 197 282 216 266 237"/>
+
+                <path d="M176 220 C191 208 207 222 207 244"/>
+
+                <path d="M225 228 C238 214 255 228 251 249"/>
+            </g>
+
+            <g fill="#ffb4c0">
+                <circle cx="123" cy="99" r="7"/>
+                <circle cx="333" cy="119" r="6"/>
+                <circle cx="346" cy="220" r="8"/>
+                <circle cx="95" cy="228" r="5"/>
+                <circle cx="310" cy="282" r="6"/>
+            </g>
+
+            <g stroke="#8eb5e0" stroke-width="2" fill="none">
+                <path d="M67 117 L110 117 L130 137"/>
+                <path d="M355 94 L326 94 L309 111"/>
+                <path d="M380 258 L338 258 L318 242"/>
+            </g>
+
+            <g fill="white" font-size="13" font-weight="bold">
+                <text x="23" y="111">SISTEM SARAF</text>
+                <text x="348" y="87">DOPAMIN</text>
+                <text x="348" y="277">GERAKAN</text>
+            </g>
+
+        </svg>
+    </div>
+</header>
+
+<!-- PROFIL -->
+<section id="profil">
+
+    <div class="about-card">
+
+        <div class="about-text">
+            <p class="section-kicker">PROFIL PENYAKIT</p>
+
+            <h2>APA ITU PENYAKIT PARKINSON?</h2>
+
+            <p>
+                Parkinson merupakan penyakit pada sistem saraf yang
+                memengaruhi kemampuan tubuh untuk mengontrol gerakan.
+                Kondisi ini berkaitan dengan berkurangnya sel saraf
+                penghasil dopamin di bagian otak.
+            </p>
+
+            <p>
+                Parkinson dapat berkembang secara bertahap. Gejalanya
+                berbeda pada setiap orang dan dapat memengaruhi aktivitas
+                sehari-hari, kemampuan bergerak, tidur, serta kondisi emosional.
+            </p>
+
+            <a href="#gejala" class="btn">LIHAT GEJALA</a>
+        </div>
+
+        <div class="about-art">
+
+            <svg viewBox="0 0 360 300">
+
+                <circle cx="180" cy="150" r="128" fill="#dce9fb"/>
+
+                <path d="M177 64
+                C150 42 117 60 112 87
+                C83 91 75 121 91 142
+                C74 164 88 193 115 205
+                C113 232 141 248 166 235
+                C180 254 203 250 213 234
+                C240 246 266 224 260 200
+                C283 181 275 153 257 133
+                C271 106 251 82 228 82
+                C218 58 193 51 177 64Z"
+                fill="#f77c91" stroke="#d84b6c" stroke-width="5"/>
+
+                <g fill="none" stroke="#b93156"
+                   stroke-width="6" stroke-linecap="round">
+
+                    <path d="M145 78 Q125 103 144 120 T127 155 T148 187"/>
+                    <path d="M180 69 Q164 93 181 112 T164 143 T190 166 T177 211"/>
+                    <path d="M217 88 Q201 109 218 130 T205 163 T225 191"/>
+                    <path d="M112 142 Q134 133 137 155"/>
+                    <path d="M238 130 Q249 147 239 164"/>
+                </g>
+
+                <path d="M180 238 Q180 258 180 270"
+                stroke="#536d91" stroke-width="12"
+                stroke-linecap="round"/>
+
+                <g fill="#e91e35">
+                    <circle cx="69" cy="87" r="8"/>
+                    <circle cx="290" cy="115" r="7"/>
+                    <circle cx="282" cy="220" r="9"/>
+                    <circle cx="85" cy="228" r="6"/>
+                </g>
+
+            </svg>
+
+            <div class="art-caption">
+                Mengenal kesehatan sistem saraf
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GEJALA -->
+<section id="gejala">
+
+    <div class="section-title">
+        <p class="section-kicker">KENALI TANDA-TANDANYA</p>
+
+        <h2>GEJALA <span>PARKINSON</span></h2>
+
+        <p>Gejala dapat berkembang perlahan dan berbeda pada setiap individu.</p>
+    </div>
+
+    <div class="card-grid four">
+
+        <article class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 80 80">
+                    <path d="M10 42 H23 L31 23 L41 57
+                    L50 34 L58 42 H70"
+                    fill="none" stroke="#e91e35"
+                    stroke-width="6" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h3>Tremor</h3>
+
+            <p>
+                Gemetar pada tangan, jari, kaki, atau bagian tubuh
+                lain, yang dapat terlihat saat sedang beristirahat.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 80 80">
+                    <circle cx="43" cy="15" r="9"
+                    fill="#ffb4c0" stroke="#d94d68" stroke-width="3"/>
+
+                    <path d="M38 28 L28 46 L44 52 L54 35
+                    M33 44 L20 65 M44 52 L59 66"
+                    fill="none" stroke="#244d78"
+                    stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h3>Gerakan Lambat</h3>
+
+            <p>
+                Gerakan menjadi lebih lambat sehingga aktivitas
+                sehari-hari dapat membutuhkan waktu lebih lama.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 80 80">
+                    <path d="M20 48 C17 38 23 32 30 29
+                    L36 38 L42 29 C49 25 55 32 52 39
+                    L62 45 C67 50 62 59 56 64
+                    L33 66 C24 64 20 58 20 48Z"
+                    fill="#ffcfaa" stroke="#d98c64" stroke-width="4"/>
+                </svg>
+            </div>
+
+            <h3>Kekakuan Otot</h3>
+
+            <p>
+                Otot terasa kaku atau tegang sehingga gerakan
+                menjadi kurang fleksibel.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 80 80">
+                    <path d="M40 15 V62 M24 24 H56
+                    M18 24 L9 44 H27 Z
+                    M62 24 L53 44 H71 Z
+                    M28 64 H52"
+                    fill="none" stroke="#244d78"
+                    stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h3>Gangguan Keseimbangan</h3>
+
+            <p>
+                Kesulitan menjaga keseimbangan tubuh dan
+                perubahan pola berjalan.
+            </p>
+        </article>
+
+    </div>
+
+    <!-- ILUSTRASI ORANG -->
+    <div class="symptom-showcase">
+
+        <div class="showcase-art">
+
+            <svg viewBox="0 0 420 280">
+
+                <rect x="10" y="10" width="400" height="260"
+                rx="30" fill="#eaf1fb"/>
+
+                <circle cx="214" cy="86" r="45"
+                fill="#ffd2b4" stroke="#ce9068" stroke-width="4"/>
+
+                <path d="M173 77 Q178 37 214 39
+                Q250 40 258 75 Q238 63 224 65
+                Q198 61 173 77Z" fill="#52647b"/>
+
+                <path d="M173 132 Q211 119 253 137
+                L281 210 H147Z"
+                fill="#e95b72" stroke="#c84059" stroke-width="4"/>
+
+                <path d="M163 151 L126 190 L145 212
+                M256 151 L291 183 L280 213"
+                fill="none" stroke="#ffd2b4"
+                stroke-width="22" stroke-linecap="round"/>
+
+                <path d="M112 170 Q99 179 110 191
+                M104 165 Q91 175 103 188
+                M300 164 Q313 174 301 189
+                M309 169 Q322 180 310 194"
+                fill="none" stroke="#e91e35"
+                stroke-width="4" stroke-linecap="round"/>
+
+                <circle cx="83" cy="70" r="12" fill="#ffb4c0"/>
+                <circle cx="335" cy="93" r="10" fill="#a8c6e9"/>
+                <circle cx="330" cy="222" r="8" fill="#ffb4c0"/>
+
+            </svg>
+        </div>
+
+        <div class="showcase-copy">
+            <h3>Setiap orang dapat mengalami gejala yang berbeda</h3>
+
+            <p>
+                Jika mengalami gejala yang mengganggu atau perubahan
+                gerakan, konsultasikan dengan tenaga kesehatan
+                untuk pemeriksaan yang tepat.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAKTOR RISIKO -->
+<section id="risiko" class="soft-section">
+
+    <div class="section-title">
+        <p class="section-kicker">INFORMASI PENTING</p>
+
+        <h2>PENYEBAB & <span>FAKTOR RISIKO</span></h2>
+
+        <p>Beberapa faktor berkaitan dengan kemungkinan seseorang mengalami Parkinson.</p>
+    </div>
+
+    <div class="card-grid three">
+
+        <article class="card">
+            <div class="card-icon">🧬</div>
+            <h3>Faktor Genetik</h3>
+            <p>
+                Perubahan gen tertentu dapat berperan, meskipun
+                tidak semua kasus Parkinson diturunkan dalam keluarga.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">⌛</div>
+            <h3>Usia</h3>
+            <p>
+                Risiko Parkinson meningkat seiring bertambahnya usia,
+                walaupun penyakit ini dapat terjadi pada usia lebih muda.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Faktor Lingkungan</h3>
+            <p>
+                Paparan bahan tertentu, termasuk pestisida,
+                sedang diteliti kaitannya dengan risiko Parkinson.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- PENCEGAHAN -->
+<section id="pencegahan" class="prevent-section">
+
+    <div class="section-title inverse">
+        <p class="section-kicker">KEBIASAAN SEHAT</p>
+
+        <h2>MENJAGA <span>KESEHATAN OTAK</span></h2>
+
+        <p>
+            Belum ada cara yang terbukti pasti mencegah Parkinson,
+            tetapi menjaga kesehatan umum tetap penting.
+        </p>
+    </div>
+
+    <div class="card-grid three">
+
+        <article class="prevent-card">
+            <div class="card-icon">🏃</div>
+            <h3>Aktivitas Fisik</h3>
+            <p>
+                Melakukan aktivitas fisik secara teratur sesuai
+                kemampuan untuk menjaga kebugaran tubuh.
+            </p>
+        </article>
+
+        <article class="prevent-card">
+            <div class="card-icon">🥗</div>
+            <h3>Pola Makan Seimbang</h3>
+            <p>
+                Mengonsumsi makanan bergizi seimbang, sayur,
+                buah, dan memenuhi kebutuhan cairan.
+            </p>
+        </article>
+
+        <article class="prevent-card">
+            <div class="card-icon">🌱</div>
+            <h3>Lingkungan Sehat</h3>
+            <p>
+                Mengurangi paparan bahan kimia berbahaya
+                dan menerapkan kebiasaan hidup sehat.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- PENANGANAN -->
+<section id="penanganan">
+
+    <div class="section-title">
+        <p class="section-kicker">DUKUNGAN MEDIS</p>
+
+        <h2>PENANGANAN <span>PARKINSON</span></h2>
+
+        <p>
+            Penanganan bertujuan membantu mengendalikan gejala
+            dan mempertahankan kualitas hidup.
+        </p>
+    </div>
+
+    <div class="card-grid two">
+
+        <article class="card">
+            <div class="card-icon">🩺</div>
+            <h3>Pemeriksaan Medis</h3>
+            <p>
+                Dokter melakukan wawancara mengenai gejala,
+                riwayat kesehatan, dan pemeriksaan neurologis.
+                Pasien dapat dirujuk ke dokter spesialis saraf.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">💊</div>
+            <h3>Terapi Obat</h3>
+            <p>
+                Dokter dapat memberikan obat untuk membantu
+                mengendalikan gejala. Penggunaan obat harus
+                sesuai resep dan pengawasan dokter.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">🏋️</div>
+            <h3>Fisioterapi</h3>
+            <p>
+                Latihan yang dibimbing tenaga profesional dapat
+                membantu mobilitas, fleksibilitas, dan keseimbangan.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">🗣️</div>
+            <h3>Terapi Pendukung</h3>
+            <p>
+                Terapi okupasi dan terapi wicara dapat membantu
+                aktivitas sehari-hari, kemampuan berbicara, dan menelan.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- FORM KONSULTASI -->
+<section id="konsultasi" class="soft-section">
+
+    <div class="section-title">
+        <p class="section-kicker">KIRIM PERTANYAAN</p>
+
+        <h2>FORMULIR <span>KONSULTASI</span></h2>
+
+        <p>
+            Isi formulir berikut untuk menyampaikan pertanyaan
+            atau permintaan informasi.
+        </p>
+    </div>
+
+    <div class="form-container">
+
+        <form id="formKonsultasi">
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama"
+            placeholder="Masukkan nama lengkap">
+
+            <label for="email">Email</label>
+            <input type="email" id="email"
+            placeholder="contoh@email.com">
+
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon"
+            placeholder="Masukkan nomor telepon">
+
+            <label for="pesan">Pesan Konsultasi</label>
+            <textarea id="pesan"
+            placeholder="Tuliskan pertanyaan Anda..."></textarea>
+
+            <button type="submit" class="btn">KIRIM PESAN</button>
+
+            <p id="hasil"></p>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak">
+
+    <div class="section-title">
+        <p class="section-kicker">HUBUNGI PENGELOLA</p>
+
+        <h2>HUBUNGI <span>KAMI</span></h2>
+
+        <p>Informasi pengelola website edukasi Parkinson Care.</p>
+    </div>
+
+    <div class="card-grid three">
+
+        <article class="contact-card">
+            <div class="card-icon">📍</div>
+            <h3>Alamat</h3>
+            <p>Surakarta, Jawa Tengah, Indonesia</p>
+        </article>
+
+        <article class="contact-card">
+            <div class="card-icon">☎️</div>
+            <h3>Telepon</h3>
+            <p>08xxxxxxxxxx</p>
+        </article>
+
+        <article class="contact-card">
+            <div class="card-icon">✉️</div>
+            <h3>Email</h3>
+            <p>parkinsoncare@email.com</p>
+        </article>
+
+    </div>
+</section>
+
+<!-- REFERENSI -->
+<section class="references">
+
+    <h2>SUMBER REFERENSI INFORMASI</h2>
+
+    <ol>
+        <li>
+            World Health Organization (WHO):
+            <a href="https://www.who.int/news-room/fact-sheets/detail/parkinson-disease">
+                Parkinson Disease
+            </a>
+        </li>
+
+        <li>
+            NHS:
+            <a href="https://www.nhs.uk/conditions/parkinsons-disease/symptoms/">
+                Parkinson's Disease - Symptoms
+            </a>
+        </li>
+
+        <li>
+            NHS:
+            <a href="https://www.nhs.uk/conditions/parkinsons-disease/causes/">
+                Parkinson's Disease - Causes
+            </a>
+        </li>
+
+        <li>
+            NHS:
+            <a href="https://www.nhs.uk/conditions/parkinsons-disease/treatment/">
+                Parkinson's Disease - Treatment
+            </a>
+        </li>
+    </ol>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>PARKINSON CARE</h3>
+
+    <p>HARUM KHOIRUNNISA NUGRAHENI</p>
+
+    <p>250205023</p>
+
+    <p>© 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

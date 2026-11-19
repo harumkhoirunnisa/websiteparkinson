@@ -1,0 +1,620 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #182334;
+    font-size: 18px;
+}
+
+:root {
+    --red: #e91e35;
+    --navy: #06172e;
+    --blue: #123c70;
+    --white: #ffffff;
+    --gray: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: var(--red);
+    padding: 20px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffe3e7;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd5dc;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HOME */
+.hero {
+    min-height: 500px;
+
+    background:
+        radial-gradient(circle at 80% 35%,
+        #294c79 0%, transparent 28%),
+
+        linear-gradient(120deg,
+        #031329, #0c294c);
+
+    color: white;
+    padding: 75px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.eyebrow,
+.section-kicker {
+    color: var(--red);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.18;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ff455a;
+}
+
+.hero-desc {
+    font-size: 19px;
+    line-height: 1.9;
+    color: #d5deeb;
+    margin-bottom: 30px;
+}
+
+/* ILUSTRASI HOME */
+.hero-art {
+    width: 43%;
+    max-width: 480px;
+}
+
+.hero-art svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TOMBOL */
+.btn {
+    display: inline-block;
+    padding: 16px 27px;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c9142b;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--navy);
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: #e8edf5;
+}
+
+/* PENGATURAN SECTION */
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.section-title h2 span {
+    color: var(--red);
+}
+
+.section-title p:not(.section-kicker) {
+    color: #667085;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.section-kicker {
+    margin-bottom: 12px;
+}
+
+/* PROFIL */
+.about-card {
+    background: white;
+    padding: 48px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-card h2 {
+    color: var(--navy);
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.about-card p {
+    color: #596579;
+    line-height: 1.9;
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+
+/* ILUSTRASI PROFIL */
+.about-art {
+    width: 30%;
+    min-width: 220px;
+    background: linear-gradient(135deg, #eaf1fb, #ffe4e8);
+    border-radius: 20px;
+    padding: 28px 18px;
+    text-align: center;
+}
+
+.about-art svg {
+    width: 100%;
+    height: auto;
+}
+
+.art-caption {
+    font-size: 16px;
+    color: #42526a;
+    font-weight: bold;
+}
+
+/* KARTU */
+.card-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.card-grid.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-grid.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* KARTU UMUM */
+.card,
+.prevent-card,
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 17px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover,
+.prevent-card:hover,
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ICON */
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.card-icon svg {
+    width: 70px;
+    height: 70px;
+}
+
+/* JUDUL KARTU */
+.card h3,
+.prevent-card h3,
+.contact-card h3 {
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+/* ISI KARTU */
+.card p,
+.prevent-card p,
+.contact-card p {
+    color: #667085;
+    line-height: 1.85;
+    font-size: 17px;
+}
+
+/* BACKGROUND ABU */
+.soft-section {
+    background: #eaf0f7;
+}
+
+/* PENCEGAHAN */
+.prevent-section {
+    background: var(--navy);
+    border-radius: 32px;
+    margin: 30px 4%;
+    padding: 65px 5%;
+}
+
+.inverse h2 {
+    color: white;
+}
+
+.inverse p:not(.section-kicker) {
+    color: #d2deed;
+}
+
+.prevent-card {
+    text-align: center;
+}
+
+/* ILUSTRASI GEJALA */
+.symptom-showcase {
+    margin-top: 50px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.06);
+}
+
+.showcase-art {
+    width: 45%;
+}
+
+.showcase-art svg {
+    width: 100%;
+    height: auto;
+}
+
+.showcase-copy {
+    flex: 1;
+}
+
+.showcase-copy h3 {
+    color: var(--navy);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.showcase-copy p {
+    color: #667085;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* FORM */
+.form-container {
+    max-width: 760px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 23px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(233,30,53,0.1);
+}
+
+.form-container textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#hasil {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* KONTAK */
+.contact-card {
+    text-align: center;
+}
+
+/* REFERENSI */
+.references {
+    background: #f4f6f9;
+    padding: 40px 8%;
+}
+
+.references h2 {
+    color: var(--navy);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.references li {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.references a {
+    color: #174c8b;
+    word-break: break-word;
+}
+
+/* FOOTER */
+footer {
+    background: #020b18;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    font-size: 16px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 9px;
+    color: #b8c3d3;
+}
+
+/* TABLET */
+@media (max-width: 1050px) {
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 49px;
+    }
+
+    .card-grid.four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* HP */
+@media (max-width: 760px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        background: var(--red);
+        width: 100%;
+        padding: 24px 7%;
+        gap: 20px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-desc {
+        font-size: 17px;
+    }
+
+    .hero-art {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        padding: 28px;
+        text-align: center;
+    }
+
+    .about-card h2 {
+        font-size: 27px;
+    }
+
+    .about-card p {
+        font-size: 17px;
+    }
+
+    .about-art {
+        width: 100%;
+    }
+
+    .card-grid.four,
+    .card-grid.three,
+    .card-grid.two {
+        grid-template-columns: 1fr;
+    }
+
+    .symptom-showcase {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .showcase-art {
+        width: 100%;
+    }
+
+    .showcase-copy h3 {
+        font-size: 24px;
+    }
+
+    .showcase-copy p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .section-title p:not(.section-kicker) {
+        font-size: 16px;
+    }
+
+    .prevent-section {
+        margin: 15px 3%;
+        padding: 45px 5%;
+    }
+
+    .card,
+    .prevent-card,
+    .contact-card {
+        padding: 25px;
+    }
+
+    .card h3,
+    .prevent-card h3,
+    .contact-card h3 {
+        font-size: 22px;
+    }
+
+    .card p,
+    .prevent-card p,
+    .contact-card p {
+        font-size: 16px;
+    }
+
+    .btn-secondary {
+        margin: 12px 0 0;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+}
